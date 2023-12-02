@@ -1,0 +1,103 @@
+@font-face {
+    font-family: "Montserrat-Middle";
+    src: url("fonts/TTF/montserrat-medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url("fonts/TTF/montserrat-bold.ttf") format("truetype");
+}
+
+body {
+    background: #e96443;
+    background: -webkit-linear-gradient(to right, #904e95, #e96443);
+    background: linear-gradient(to right, #904e95, #e96443);
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: "Montserrat-Bold", serif;
+    align-items: center;
+}
+
+.main-logo-text {
+    font-size: 24px;
+}
+
+.main-logo {
+    margin-right: 5px;
+}
+
+.location_input {
+    display: block;
+    border: none;
+    background: rgba(255, 255, 255, .3);
+    border-radius: 10px;
+    padding: 10px;
+    font-family: "Montserrat-Middle";
+    max-width: 100%;
+    width: 350px;
+    font-size: 16px;
+    color: white;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.location_input::placeholder {
+    color: white;
+}
+
+.button_search {
+    display: block;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    background: #aa4b6b;
+    background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+    background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+    font-family: "Montserrat-Bold";
+    max-width: 100%;
+    width: 300px;
+    height: 40px;
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.button_search:hover {
+    opacity: 0.9;
+}
+
+.weather_output {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Montserrat-Bold";
+    margin-top: 45px;
+}
+
+.temperature_graph, .humidity_graph, .pressure_graph {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.weather_info, .humidity_info, .pressure_info {
+     margin-left: 10px;
+}
+
+.weather_output {
+    display: none;
+}
+
+

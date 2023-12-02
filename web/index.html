@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Погода</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script type="text/javascript" src="eel.js"></script>
+    <script type="text/javascript" src="js/script.js" defer></script>
+    <link rel="icon" type="image/png" href="images/main-icon.png">
+</head>
+<body>
+    <header>
+        <div class="main-logo">
+            <img src="images/main-icon.png" alt="main-logo" width="36px">
+        </div>
+        <div class="main-logo-text">
+            <p>Погода</p>
+        </div>
+    </header>
+    <section class="select_place">
+        <label>
+            <input type="text" placeholder="Введите название города..." class="location_input">
+        </label>
+        <button class="button_search">Узнать погоду</button>
+    </section>
+    <section class="weather_output">
+        <div class="temperature_graph">
+            <div class="weather-icon_div">
+                <img src="images/weather-icons/few%20clouds.png" width="36px" class="weather_icon" alt="logo">
+            </div>
+            <div class="weather_info">
+                <p class="temperature_info_text">Солнечно, 22°С</p>
+            </div>
+        </div>
+        <div class="humidity_graph">
+            <div class="humidity-icon">
+                <img src="images/weather_params_icons/humidity.png" width="36px" alt="pressure_icon">
+            </div>
+            <div class="humidity_info">
+                <p class="humidity_info_text">Влажность: 50%</p>
+            </div>
+        </div>
+        <div class="pressure_graph">
+            <div class="pressure-icon">
+                <img src="images/weather_params_icons/pressure.png" width="36px" alt="pressure_icon">
+            </div>
+            <div class="pressure_info">
+                <p class="pressure_info_text">Давление: 768 рт. ст.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
